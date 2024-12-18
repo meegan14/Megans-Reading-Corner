@@ -1,0 +1,203 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #3b3025; /* Warm brown background */
+    color: #f4f1e9; /* Creamy text color for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2e2a24; /* Darker brown for contrast */
+    color: #d5c1a3; /* Muted golden text */
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 3px solid #6a5e4e; /* Subtle border for separation */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header p {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #4c4031; /* Greenish-brown tone */
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f4f1e9;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 0.5rem; /* Added padding for spacing */
+}
+
+nav a:hover {
+    color: #d5c1a3; /* Golden hover effect */
+}
+
+/* Main Content */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #53483c; /* Warm brown block */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.welcome h2 {
+    margin: 0;
+    color: #c2b09b;
+}
+
+.welcome p {
+    margin-top: 0.5rem;
+}
+
+.image-space {
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    overflow: hidden; /* Keeps rounded edges for images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.image-space img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures the image stretches fully */
+}
+
+hr {
+    border: 1px solid #d5c1a3; /* Adds a golden line under the image */
+    margin: 2rem 0;
+}
+
+/* New bar between sections */
+.section-divider {
+    border: 1px solid #d5c1a3; /* Golden color */
+    margin: 2rem 0; /* Adds space around the bar */
+}
+
+/* Current Read Section */
+.current-read-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d5c1a3; /* Golden color for the heading */
+    margin-bottom: 1rem; /* Adds space below the heading */
+    text-align: center; /* Centers the heading */
+}
+
+.current-read {
+    display: flex;
+    align-items: flex-start;
+    background-color: #53483c;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem; /* Adds space above the section */
+}
+
+.current-read img {
+    width: 220px; /* Increased size of the book cover */
+    height: auto;
+    margin-right: 1.5rem; /* Increased space between image and text */
+    border: 5px solid #d5c1a3; /* Adds a golden border around the image */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.current-read .text {
+    color: #c2b09b;
+}
+
+.current-read .text p {
+    margin-bottom: 0.8rem; /* Adds spacing between paragraphs */
+    font-size: 1rem; /* Adjusts font size for readability */
+}
+
+.current-read .text em {
+    font-style: italic; /* Italicizes book titles and series names */
+}
+
+.current-read .text strong {
+    font-weight: bold; /* Emphasizes headings */
+}
+
+/* Video Section */
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.video-description {
+    background-color: #53483c;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #c2b09b;
+    flex-basis: 55%; /* Increased to make the text larger */
+    text-align: center;
+    font-size: 2rem; /* Increased font size */
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 2rem; /* Adds space between the text and the video */
+}
+
+.video-description::after {
+    content: " →"; /* Adds an arrow after the text */
+    font-size: 2.5rem; /* Bigger arrow */
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.video-link iframe {
+    flex-basis: 40%;
+    border: 5px solid #6a5e4e; /* Adds an aesthetic border */
+    border-radius: 10px; /* Rounded corners for the video */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e2a24;
+    color: #d5c1a3;
+    margin-top: 2rem;
+    border-top: 3px solid #6a5e4e; /* Adds border to footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+.img-thumbnail {
+    border: 2px solid #261f18 !important; /* Override Bootstrap's default white border */
+    background-color: #261f18 !important; /* Removes any default background */
+    border-radius: 10px; /* Optional rounded corners */
+}
